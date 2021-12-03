@@ -1,0 +1,37 @@
+>create two branches (dev and test) then create two files in dev
+	branch and push this changes to remote repo.
+ 1173  git branch dev 
+ 1174  git branch test
+ 1175  git checkout dev 
+ 1176  touch devfile1
+ 1177  touch devfile2
+ 1178  git add .
+ 1179  git push origin dev 
+ 1180  git push origin test
+
+>merge this changes on main branch and then push it to your
+	remote main branch.
+ 1181  git checkout dev 
+ 1182  git checkout main
+ 1183  git merge dev
+ 1184  ls
+ 
+>Tell me how to remove them locally and remotly.
+ 1187  git push origin :test 
+ 1188  git push origin :dev
+ 1189  git branch -D dev 
+ 1190  git branch -d test 
+
+>create an annoted tag with tagname v1.4.
+ 1192  git tag -a v1.4 -m "lab2-tag"
+
+>push it to remote server
+ 1193  git push --tags 
+
+>tell me how to list tags locally.
+ 1194  git tag 
+
+tell me how to delete tag locally and remotely.
+ 1195  git tag -d v1.4
+ 1196  git push origin --delete v1.4
+ 
