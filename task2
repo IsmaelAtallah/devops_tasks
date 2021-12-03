@@ -1,2 +1,41 @@
 ismael abdelhamid atallah
 
+ 1107  sudo apt-get install git-all
+ 1108  git config --global user.name "IsmaelAtallah"
+ 1109  git config --global user.email  "ismaelatallah59@gmail.com"
+ 1110  mkdir fgitproj
+ 1111  cd fgitproj/
+ 1112  git init 
+ 1113  ls -a
+ 1114  touch ismael
+ 1115  ls
+ 1116  vi ismael
+ 1117  cat ismael 
+ 1118  git status 
+ 1119  ssh-keygen -t rsa -b 4069 -C "ismaelatallah59@gmail.com"
+ 1120  cat /home/timon/.ssh/id_rsa.pub
+ 1121  cd fgitproj/
+ 1122  git clone git@github.com:FatmaKhaled/devops3month.git
+ 1123  ls 
+ 1124  cp ismael devops3month/
+ 1125  cd devops3month/
+ 1126  ls
+ 1127  git push origin main
+ 1128  git add .
+ 1129  git commit -m "uplode task1"
+ 1130  git push origin main
+ 1131  cd ~
+ 1132  mkdir task2
+ 1133  cd task2/
+ 1134  git init 
+ 1135  touch task2
+ 1136  vi task2
+ 1137  cat task2 
+ 1138  git add .
+ 1139  git commit -m "task 2"
+ 1140  git branch -M main
+ 1141  git remote add origin git@github.com:IsmaelAtallah/devops_tasks.git
+ 1142  git remote -v
+ 1143  git push origin main
+ 1151  history | tail -40 >> task2 
+ 1152  cat task2 
